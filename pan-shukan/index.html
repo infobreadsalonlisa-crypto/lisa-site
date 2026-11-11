@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>しあわせのパン習慣</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="スペルト小麦で始める しあわせのパン習慣 通信講座（全12回）">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#fbf6ec; --paper:#fffdf8; --wheat:#f3e4c4; --ink:#3b2a20; --soft:#6e5a4b;
+  --line:#e6d6b8; --gold:#b4823a; --rouge:#7c2f2a; --rouge-ink:#fffaf2;
+  --serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1d1611; --paper:#261d16; --wheat:#33271c; --ink:#f3e8d8; --soft:#cdbba6;
+  --line:#4a3a2b; --gold:#d9a95b; --rouge:#b5534b; --rouge-ink:#fffaf2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1d1611; --paper:#261d16; --wheat:#33271c; --ink:#f3e8d8; --soft:#cdbba6;
+  --line:#4a3a2b; --gold:#d9a95b; --rouge:#b5534b; --rouge-ink:#fffaf2; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.95;letter-spacing:.03em}
+img{display:block;max-width:100%}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:64px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;text-wrap:balance;line-height:1.5;margin:0}
+h2{font-size:clamp(1.45rem,5.4vw,1.9rem);text-align:center;margin-bottom:28px}
+h2 .en{display:block;font-family:var(--serif);font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:500;margin-bottom:6px}
+p{margin:0 0 1em}
+.lead{font-family:var(--serif);font-size:1.08rem;line-height:2.2;text-align:center}
+.sep{width:44px;height:1px;background:var(--gold);margin:0 auto 28px}
+
+/* hero */
+.hero{position:relative;color:#fffaf2;text-align:center;overflow:hidden;background:#3b2a20}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,16,.15),rgba(40,26,16,.55))}
+.hero .wrap{position:relative;z-index:1;padding-block:96px 80px}
+.hero .kicker{font-family:var(--serif);letter-spacing:.25em;font-size:.85rem;margin-bottom:18px}
+.hero h1{font-size:clamp(1.9rem,8vw,2.9rem);letter-spacing:.08em;margin-bottom:14px}
+.hero .sub{font-family:var(--serif);font-size:1.05rem;margin-bottom:6px}
+.hero .badge{display:inline-block;border:1px solid rgba(255,250,242,.7);padding:4px 18px;font-size:.9rem;letter-spacing:.2em;margin-top:18px}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px}
+.alt{background:var(--wheat)}
+
+ul.check{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.check li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 18px 14px 46px;position:relative}
+ul.check li::before{content:"";position:absolute;left:18px;top:22px;width:14px;height:8px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+
+.feat{display:grid;gap:14px}
+.feat .card h3{font-size:1.1rem;margin-bottom:6px;color:var(--rouge)}
+.feat .card p{margin:0;color:var(--soft);font-size:.95rem}
+
+.breads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.bread{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.bread .ph{aspect-ratio:1/1;background:var(--wheat);display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:var(--gold);font-size:1.6rem}
+.bread .ph img{width:100%;height:100%;object-fit:cover}
+.bread .cap{padding:8px 8px 10px;font-size:.8rem;line-height:1.5;text-align:center}
+.bread .no{display:block;font-family:var(--serif);color:var(--gold);font-size:.75rem;letter-spacing:.1em}
+@media (max-width:420px){.breads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.steps{display:grid;gap:0;border-left:2px solid var(--line);margin-left:10px}
+.step{position:relative;padding:0 0 26px 26px}
+.step::before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.step b{font-family:var(--serif);font-size:1.05rem;display:block}
+.step span{color:var(--soft);font-size:.95rem}
+
+.voices{display:grid;gap:14px}
+.voice{background:var(--paper);border-left:3px solid var(--gold);border-radius:4px 12px 12px 4px;padding:18px 20px;font-family:var(--serif);line-height:2}
+.voice small{display:block;font-family:var(--sans);color:var(--soft);font-size:.8rem;margin-top:6px}
+
+.profile{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;align-items:start}
+.profile img{border-radius:12px}
+.profile h3{font-size:1.35rem}
+.profile .role{color:var(--gold);font-family:var(--serif);font-size:.9rem;margin-bottom:10px}
+.profile ul{margin:0;padding-left:1.1em;color:var(--soft);font-size:.92rem;line-height:1.85}
+@media (max-width:520px){.profile{grid-template-columns:1fr}.profile img{max-width:200px;margin:0 auto}}
+
+.price{text-align:center}
+.price .amount{font-family:var(--serif);font-size:clamp(2.2rem,10vw,3rem);color:var(--rouge);line-height:1.2;font-variant-numeric:tabular-nums}
+.price .amount small{font-size:1rem;color:var(--ink)}
+.price .incl{list-style:none;padding:0;margin:22px 0;display:grid;gap:6px;font-size:.95rem}
+.price .note{font-size:.9rem;color:var(--soft)}
+.price .up{display:inline-block;margin-top:8px;padding:6px 16px;border-radius:999px;background:var(--wheat);font-size:.88rem}
+
+.cta{display:block;width:100%;max-width:420px;margin:28px auto 0;text-align:center;text-decoration:none;
+  background:var(--rouge);color:var(--rouge-ink);font-family:var(--serif);font-size:1.15rem;letter-spacing:.12em;
+  padding:18px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(124,47,42,.25)}
+.cta-sub{text-align:center;font-size:.85rem;color:var(--soft);margin-top:10px}
+
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:16px 44px 16px 20px;font-weight:500;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q.";font-family:var(--serif);color:var(--gold);margin-right:8px}
+summary::after{content:"+";position:absolute;right:20px;top:14px;color:var(--gold);font-size:1.2rem}
+details[open] summary::after{content:"−"}
+details .a{padding:0 20px 18px;color:var(--soft);font-size:.95rem}
+.faqgroup{font-family:var(--serif);color:var(--gold);font-size:.9rem;letter-spacing:.15em;margin:26px 0 10px}
+
+.message{text-align:center;font-family:var(--serif);line-height:2.3;font-size:1.05rem}
+.sign{font-family:var(--serif);color:var(--gold);margin-top:18px;letter-spacing:.2em}
+.small{font-size:.8rem;color:var(--soft)}
+footer{text-align:center;padding-block:36px 48px;font-size:.8rem;color:var(--soft)}
+
+/* ===== 華やかさ ===== */
+:root{--foil:linear-gradient(100deg,#9a6a24 0%,#e9c77b 28%,#fff3cf 46%,#d5a24e 62%,#8f5f1c 100%);--deep:#2a1c14;--deep-ink:#f7ecd8}
+.hero{background:#2a1c14;min-height:88vh;display:flex;align-items:center}
+.hero img{opacity:.55;filter:saturate(1.1) sepia(.15)}
+.hero::after{background:
+  radial-gradient(120% 70% at 85% 0%,rgba(255,226,160,.55),transparent 60%),
+  linear-gradient(180deg,rgba(42,28,20,.05),rgba(42,28,20,.65))}
+.hero .wrap{width:100%}
+body{margin:0}
+.hero .kicker{letter-spacing:.14em}
+.hero .ib{display:inline-block}
+.hero h1{font-size:clamp(1.9rem,8.2vw,3.6rem);letter-spacing:.04em;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:none;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+.hero .sub,.hero .kicker{text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.hero .badge{border-color:#e9c77b;color:#fff3cf;background:rgba(42,28,20,.35)}
+.hero .crest{font-family:var(--serif);font-size:.78rem;letter-spacing:.18em;color:#fff3cf;margin-top:26px;line-height:1.9;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.hero .crest b{display:block;font-size:.95rem;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:0 auto 22px}
+.orn::before,.orn::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{transform:scaleX(-1)}
+h2 .en{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+
+.strip{overflow:hidden;background:var(--deep);padding-block:14px}
+.strip .track{display:flex;gap:10px;width:max-content;animation:flow 60s linear infinite}
+.strip img{width:150px;height:110px;object-fit:cover;border-radius:8px}
+@keyframes flow{to{transform:translateX(-50%)}}
+
+.stats{background:var(--deep);color:var(--deep-ink)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;text-align:center}
+.stats .num{font-family:var(--serif);font-size:clamp(1.5rem,6vw,2.2rem);line-height:1.2;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.stats .lab{font-size:.75rem;line-height:1.5;opacity:.85}
+@media (max-width:520px){.stats .grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}}
+
+.honolulu{background:radial-gradient(120% 90% at 50% 0%,#4a3020,#21160f);color:var(--deep-ink);text-align:center}
+.honolulu .tag{display:inline-block;font-size:.72rem;letter-spacing:.28em;border:1px solid #d5a24e;color:#f3d79a;padding:3px 14px;border-radius:999px;margin-bottom:18px}
+.honolulu h2{color:var(--deep-ink)}
+.honolulu .big{font-family:var(--serif);font-size:clamp(1.35rem,5.6vw,1.9rem);line-height:1.6;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px}
+.honolulu p{opacity:.92}
+.honolulu .closed{font-size:.75rem;opacity:.65;margin-top:18px}
+
+.card{box-shadow:0 1px 0 rgba(180,130,58,.08),0 10px 28px -18px rgba(90,60,30,.35)}
+.feat .card{border-top:2px solid var(--gold)}
+.bread{transition:transform .25s ease,box-shadow .25s ease}
+.bread:hover{transform:translateY(-3px);box-shadow:0 12px 24px -14px rgba(90,60,30,.5)}
+.price{position:relative;border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:5px;margin:6px}
+.price .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--rouge);color:var(--rouge-ink);font-size:.8rem;letter-spacing:.12em;padding:4px 16px;border-radius:999px;white-space:nowrap}
+.cta{background:linear-gradient(180deg,#8d3a33,#6b2622);border:1px solid #d5a24e}
+.profile .team{display:inline-block;margin-top:6px;padding:3px 12px;border-radius:999px;background:var(--deep);color:#f3d79a;font-size:.78rem;letter-spacing:.06em}
+
+.fade{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.strip .track{animation:none}.fade{opacity:1;transform:none;transition:none}}
+
+.hero-cta{margin-top:30px;max-width:320px}
+.cta{white-space:nowrap;font-size:clamp(.98rem,4.4vw,1.15rem);letter-spacing:.08em;padding-left:12px;padding-right:12px}
+@media (max-width:420px){.card{padding:24px 18px}.price{margin:6px 2px}}
+
+/* ===== キラキラ・立体感・ワインレッド ===== */
+:root{--deep:#3a1a1e;--wine:#5c2530;--wine-2:#4a1f24;--sh:70,25,30}
+/* 一番上：朝日の光と光の粒 */
+.hero{background:#3a1a1e}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:90%;height:120%;z-index:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 30%,rgba(255,236,190,.22) 45%,transparent 60%);transform:rotate(-8deg)}
+.hero::after{background:
+  radial-gradient(110% 70% at 85% 0%,rgba(255,226,170,.5),transparent 60%),
+  linear-gradient(180deg,rgba(58,26,30,.05),rgba(58,26,30,.7))}
+.hero-particle{position:absolute;z-index:1;width:6px;height:6px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,#fff8e1 0%,rgba(255,226,160,.9) 35%,rgba(255,226,160,0) 70%);
+  animation:twinkle 4s ease-in-out infinite;opacity:0}
+.hero-particle::before{content:"";position:absolute;left:50%;top:50%;width:18px;height:1px;transform:translate(-50%,-50%);
+  background:linear-gradient(90deg,transparent,rgba(255,240,200,.9),transparent)}
+.hero-particle::after{content:"";position:absolute;left:50%;top:50%;width:1px;height:18px;transform:translate(-50%,-50%);
+  background:linear-gradient(180deg,transparent,rgba(255,240,200,.9),transparent)}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+/* 金箔の立体文字＋光が横切る */
+:root{--foil:linear-gradient(180deg,#fff6d8 0%,#f1d27e 30%,#c99335 55%,#e8c26a 75%,#9b6420 100%)}
+.hero h1{background-image:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.85) 50%,transparent 60%),var(--foil);
+  background-size:250% 100%,100% 100%;background-repeat:no-repeat;background-position:150% 0,0 0;
+  filter:drop-shadow(0 1px 0 rgba(255,245,215,.55)) drop-shadow(0 2px 1px rgba(var(--sh),.55)) drop-shadow(0 8px 16px rgba(var(--sh),.45));
+  animation:shine 6s ease-in-out 1.2s infinite}
+@keyframes shine{0%,70%{background-position:150% 0,0 0}100%{background-position:-60% 0,0 0}}
+.hero .crest b,.honolulu .big,.stats .num{filter:drop-shadow(0 1px 0 rgba(255,245,215,.4)) drop-shadow(0 2px 3px rgba(var(--sh),.5))}
+h2{text-shadow:0 1px 0 rgba(255,255,255,.7),0 2px 4px rgba(var(--sh),.14)}
+.honolulu h2{text-shadow:0 2px 6px rgba(0,0,0,.35)}
+/* ワインレッドの帯 */
+.strip,.stats{background:linear-gradient(180deg,#45202a,#2e1418)}
+.stats{border-top:1px solid rgba(233,199,123,.35);border-bottom:1px solid rgba(233,199,123,.35)}
+.honolulu{background:radial-gradient(120% 80% at 50% 0%,#7a3a3c 0%,#4a1f24 45%,#25100f 100%)}
+.honolulu .tag{box-shadow:inset 0 1px 0 rgba(255,240,200,.25)}
+/* 上質な紙・エンボス */
+.card,ul.check li,details,.voice,.bread{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 1px 2px rgba(var(--sh),.06),0 6px 14px -6px rgba(var(--sh),.16),0 18px 34px -22px rgba(var(--sh),.32)}
+.feat .card{border-top:2px solid transparent;border-image:linear-gradient(90deg,#c99335,#f1d27e,#c99335) 1 0 0 0}
+/* 写真：額に入れて飾ったように */
+.bread{border-color:rgba(201,147,53,.45)}
+.bread .ph img{transition:transform .8s ease}
+.bread:hover .ph img{transform:scale(1.05)}
+.profile img{border:1px solid rgba(201,147,53,.6);padding:4px;background:var(--paper);
+  box-shadow:0 2px 4px rgba(var(--sh),.12),0 16px 30px -14px rgba(var(--sh),.45)}
+.strip img{box-shadow:0 6px 14px -6px rgba(0,0,0,.5);outline:1px solid rgba(233,199,123,.35);outline-offset:-1px}
+/* 受講料：招待状 */
+.price{background:
+  radial-gradient(120% 60% at 50% 0%,rgba(255,236,190,.35),transparent 60%),
+  repeating-linear-gradient(45deg,rgba(201,147,53,.025) 0 2px,transparent 2px 6px),var(--paper);
+  border-color:#c99335;outline-color:#c99335}
+.price .amount{color:var(--wine);text-shadow:0 1px 0 #fff,0 3px 6px rgba(var(--sh),.22)}
+.price .ribbon{background:linear-gradient(180deg,#7a2f3a,#4a1f24);border:1px solid #d5a24e}
+/* 申し込みボタン：深紅に金の縁、ときどき光が流れる */
+.cta,.sticky-cta{background:linear-gradient(180deg,#8a2f3d 0%,#5c2530 100%);border:1px solid #d9ae5c;position:relative;overflow:hidden;
+  text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.cta{box-shadow:inset 0 1px 0 rgba(255,225,200,.35),0 2px 3px rgba(var(--sh),.3),0 12px 24px -10px rgba(var(--sh),.55)}
+.cta::after,.sticky-cta::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,240,210,.45),transparent);transform:skewX(-20deg);animation:sweep 5s ease-in-out 2s infinite}
+@keyframes sweep{0%,75%{left:-60%}100%{left:130%}}
+:root{--rouge:#5c2530}
+.hero .crest{letter-spacing:.08em}
+/* AIの案から：区切りの金の罫線に◆、ボタンを押す前に少し浮く */
+.sep{background:linear-gradient(90deg,transparent,var(--gold),transparent);width:120px;position:relative;overflow:visible}
+.sep::before{content:"◆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.6);color:var(--gold);background:var(--bg);padding:0 8px;line-height:1}
+.cta{transition:transform .25s ease,box-shadow .25s ease}
+.cta:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.hero h1,.hero-particle,.cta::after,.sticky-cta::after{animation:none}.hero-particle{opacity:.6}}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;text-align:center;text-decoration:none;
+  background:linear-gradient(180deg,#8d3a33,#6b2622);color:#fffaf2;font-family:var(--serif);letter-spacing:.12em;
+  padding:12px max(16px,env(safe-area-inset-left,0px)) calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid #d5a24e;
+  transform:translateY(110%);transition:transform .35s ease}
+.sticky-cta span{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;opacity:.85}
+.sticky-cta.show{transform:none}
+@media (max-width:760px){.sticky-cta{display:block}footer{padding-bottom:110px}}
+</style>
+
+<header class="hero">
+  <img src="img/field.jpg" alt="北海道のスペルト小麦の畑">
+  <div class="wrap">
+    <div class="kicker"><span class="ib">毎日の中に、</span><span class="ib">小さな幸せを</span></div>
+    <div class="sub">スペルト小麦で始める</div>
+    <h1><span class="ib">しあわせの</span><span class="ib">パン習慣</span></h1>
+    <div class="sub">通信講座</div>
+    <div class="badge">全12回</div>
+    <a class="cta hero-cta" href="https://mosh.jp/products/01911c1e-4a8a-4ad3-9235-6567f6434e38" target="_blank" rel="noopener" data-apply>お申し込みはこちら</a>
+    <div class="crest">講師　桑野 りさ<b><span class="ib">ホノルルコーヒー ベーカリー</span><span class="ib">日本チーム メンバー</span></b></div>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true"><div class="track">
+  <img src="img/b01.jpg" alt=""><img src="img/b02.jpg" alt=""><img src="img/b03.jpg" alt=""><img src="img/b04.jpg" alt=""><img src="img/b05.jpg" alt=""><img src="img/b06.jpg" alt=""><img src="img/b07.jpg" alt=""><img src="img/b08.jpg" alt=""><img src="img/b09.jpg" alt=""><img src="img/b10.jpg" alt=""><img src="img/b11.jpg" alt=""><img src="img/b12.jpg" alt="">
+  <img src="img/b01.jpg" alt=""><img src="img/b02.jpg" alt=""><img src="img/b03.jpg" alt=""><img src="img/b04.jpg" alt=""><img src="img/b05.jpg" alt=""><img src="img/b06.jpg" alt=""><img src="img/b07.jpg" alt=""><img src="img/b08.jpg" alt=""><img src="img/b09.jpg" alt=""><img src="img/b10.jpg" alt=""><img src="img/b11.jpg" alt=""><img src="img/b12.jpg" alt="">
+</div></div>
+
+<section>
+  <div class="wrap">
+    <h2><span class="en">INTRODUCTION</span>はじめに</h2>
+    <div class="sep"></div>
+    <p class="lead">毎日を忙しく過ごすあなたへ。<br>
+    パンを焼く時間が、<br>「自分を満たす時間」になったら<br>素敵だと思いませんか？</p>
+    <p class="lead">この講座は、誰かのためにパンを焼いてきたLISAが、<br>
+    自分の心と身体を整えるためにたどり着いた、<br>
+    スペルト小麦 × 北海道産小麦の<br>「黄金ブレンド」のパン講座です。</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">FOR YOU</span>こんな方におすすめです</h2>
+    <ul class="check">
+      <li>パンが好きだけれど、太るのが心配</li>
+      <li>市販のパンの添加物や油が気になる</li>
+      <li>家族に安心して食べさせたい</li>
+      <li>忙しいけれど、手作りのぬくもりを届けたい</li>
+      <li>自分の時間を、もっと大切にしたい</li>
+    </ul>
+  </div>
+</section>
+
+<section class="stats" style="padding-block:44px">
+  <div class="wrap">
+    <div class="grid">
+      <div><div class="num">4,600<span style="font-size:.5em">名+</span></div><div class="lab">腸活パン作りを<br>指導</div></div>
+      <div><div class="num">20<span style="font-size:.5em">年</span></div><div class="lab">食の仕事を<br>続けて</div></div>
+      <div><div class="num">19<span style="font-size:.5em">部門1位</span></div><div class="lab">著書『りさパン』<br>Kindle</div></div>
+      <div><div class="num">38<span style="font-size:.5em">本</span></div><div class="lab">富澤商店<br>公式レシピ</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="honolulu">
+  <div class="wrap">
+    <span class="tag">BAKERY DEVELOPMENT</span>
+    <div class="big">講師のLISAは、<br>ホノルルコーヒー ベーカリー<br>日本チームのメンバーです</div>
+    <p>ハワイ発のコーヒーブランド、ホノルルコーヒーが手がけるベーカリーに、<br>日本チームの一員として参加。パンのレシピ開発を担っています。</p>
+    <p style="font-family:var(--serif);color:#f3d79a;letter-spacing:.12em">2027年3月　オープン予定</p>
+    <p>そのLISAが、ご家庭で毎日焼ける形にまとめたのが、<br>この「しあわせのパン習慣」です。</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">WHY SPELT</span>なぜ、スペルト小麦なのか</h2>
+    <p class="lead" style="margin-bottom:28px">人の手で品種改良されてこなかった「古代穀物」。<br>「太らない」より、「苦しくならない」パンを。</p>
+    <div class="feat">
+      <div class="card"><h3>ゆっくり消化される</h3><p>食後の重たさや、おなかの張りを感じにくいといわれています。</p></div>
+      <div class="card"><h3>栄養がゆたか</h3><p>たんぱく質・鉄分・ビタミン・ミネラル・食物繊維を多く含みます。</p></div>
+      <div class="card"><h3>血糖値がゆるやかに上がる</h3><p>低GIの穀物として知られ、毎日の食事に取り入れやすい小麦です。</p></div>
+      <div class="card"><h3>希少な北海道産</h3><p>収穫量が少なく、作る農家さんも限られた小麦。自分の目と舌で確かめた国産にこだわっています。</p></div>
+    </div>
+    <div class="card" style="margin-top:14px;text-align:center">
+      <h3 style="font-size:1.2rem;margin-bottom:8px">粉を、選ぶ</h3>
+      <p style="margin:0">北海道産の小麦粉、スペルト小麦粉。<br>どの粉を、どう組み立てて焼くか。<br>それが、お伝えしている内容の土台です。</p>
+    </div>
+    <p class="small" style="margin-top:16px">※スペルト小麦も小麦の一種です。小麦アレルギーのある方はお申し込み前にご相談ください。</p>
+  </div>
+</section>
+
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">12 BREADS</span>1年で焼ける、12のパン</h2>
+    <div class="breads">
+      <div class="bread"><div class="ph"><img src="img/b01.jpg" alt="基本のテーブルロール" loading="lazy"></div><div class="cap"><span class="no">第1回</span>基本のテーブルロール</div></div>
+      <div class="bread"><div class="ph"><img src="img/b02.jpg" alt="あんぱん" loading="lazy"></div><div class="cap"><span class="no">第2回</span>あんぱん</div></div>
+      <div class="bread"><div class="ph"><img src="img/b03.jpg" alt="ハイジの白パン" loading="lazy"></div><div class="cap"><span class="no">第3回</span>ハイジの白パン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b04.jpg" alt="塩パン" loading="lazy"></div><div class="cap"><span class="no">第4回</span>塩パン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b05.jpg" alt="黒ごまとさつま芋のパン" loading="lazy"></div><div class="cap"><span class="no">第5回</span>黒ごまとさつま芋のパン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b06.jpg" alt="かぼちゃのちぎりパン" loading="lazy"></div><div class="cap"><span class="no">第6回</span>かぼちゃのちぎりパン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b07.jpg" alt="ベーコン・エピ" loading="lazy"></div><div class="cap"><span class="no">第7回</span>ベーコン・エピ</div></div>
+      <div class="bread"><div class="ph"><img src="img/b08.jpg" alt="くるみパン" loading="lazy"></div><div class="cap"><span class="no">第8回</span>くるみパン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b09.jpg" alt="ポテトフォカッチャ" loading="lazy"></div><div class="cap"><span class="no">第9回</span>ポテトフォカッチャ</div></div>
+      <div class="bread"><div class="ph"><img src="img/b10.jpg" alt="ショコラハート" loading="lazy"></div><div class="cap"><span class="no">第10回</span>ショコラハート</div></div>
+      <div class="bread"><div class="ph"><img src="img/b11.jpg" alt="焼きカレーパン" loading="lazy"></div><div class="cap"><span class="no">第11回</span>焼きカレーパン</div></div>
+      <div class="bread"><div class="ph"><img src="img/b12.jpg" alt="ベーグル" loading="lazy"></div><div class="cap"><span class="no">第12回</span>ベーグル<br>（プレーン・黒ごま）</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="en">CONTENTS</span>講座の内容</h2>
+    <div class="feat">
+      <div class="card"><h3>毎月15日に、レシピと動画をお届け</h3><p>初心者さんにも分かるよう、作業の様子をていねいに撮影しています。</p></div>
+      <div class="card"><h3>スペルト小麦パンミックス粉を、ご自宅へ全3回</h3><p>講座のはじめにお届けし、そのあとは4か月ごとに、全3回お送りします。</p></div>
+      <div class="card"><h3>特別な型がなくても始められます</h3><p>ご家庭にある基本の道具で焼けるパンを選んでいます。</p></div>
+      <div class="card"><h3>LINEオープンチャットでいつでも質問</h3><p>受講生どうしでワイワイ。ご質問には基本24時間以内にお返事します。</p></div>
+      <div class="card"><h3>月1回のオンライン相談会</h3><p>参加は自由。都合のよい月だけご参加いただけます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">WHAT YOU GET</span>講座で手に入る「とっておき」</h2>
+    <ul class="check">
+      <li>食べても罪悪感のないパンが、毎月焼ける</li>
+      <li>家族の健康と笑顔が増える</li>
+      <li>パン作りが「癒し」と「自信」になる</li>
+      <li>大事な人に、渡せるパンが焼けるようになる</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="en">AFTER THE COURSE</span>パンの技術を、一生使える資産に</h2>
+    <p class="lead" style="margin-bottom:28px">焼けるようになって、終わりではありません。<br>進む道は、ご自身で選べます。</p>
+    <div class="feat">
+      <div class="card"><h3>01　つくる</h3><p>基礎から、ご家庭で本格的なパンを焼けるまで。</p></div>
+      <div class="card"><h3>02　教える</h3><p>ご自宅でパン教室を開き、講師として収入を得る。</p></div>
+      <div class="card"><h3>03　届ける</h3><p>マルシェなどで販売し、自分の商品を持つ。</p></div>
+      <div class="card"><h3>04　開く</h3><p>店舗の開業を目指す。</p></div>
+    </div>
+    <p class="small" style="margin-top:16px">「教える」「届ける」「開く」に進みたい方には、レシピを商用で使えるライセンスもご用意しています。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="en">VOICE</span>受講生・お客さまの声</h2>
+    <div class="voices">
+      <div class="voice">朝、香ばしい匂いで子どもが笑った。<br>美味しいってこんなに幸せなんだ。<br>暮らしってこうして変わるんだなって思った。<small>受講生</small></div>
+      <div class="voice">焼きたての香りに癒されて、「これが私の時間だ」って思えるようになりました。<small>40代 女性</small></div>
+      <div class="voice">子どもが「ママのパンがいちばん美味しい」って言ってくれて、嬉しかった！<small>30代 女性</small></div>
+      <div class="voice">いつもはパンを食べると胃もたれして我慢していました。LISAさんのパンは軽くて美味しくて、気づいたら4つも。それでも全く胃もたれしませんでした。<small>お店のお客さま</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">PROFILE</span>講師</h2>
+    <div class="profile">
+      <img src="img/lisa.jpg" alt="桑野りさ" loading="lazy">
+      <div>
+        <div class="role">Escuri 主宰<br>フード＆ビューティー・プロデューサー<br>スペルト小麦研究家 ／ 料理家</div>
+        <h3>桑野 りさ <span style="font-size:.8rem;color:var(--soft);font-weight:500">Lisa Kuwano</span></h3>
+        <span class="team">ホノルルコーヒー ベーカリー日本チーム メンバー</span>
+        <p style="margin:10px 0 0;font-family:var(--serif)">技術を渡し、在り方を整え、人と企業を結ぶ。</p>
+        <ul style="margin-top:12px">
+          <li>ホノルルコーヒー ベーカリー日本チーム｜ハワイ発のコーヒーブランドが手がけるベーカリーで、パンのレシピ開発を担当（2027年3月オープン予定）</li>
+          <li>食の仕事を、20年。料理・パン・お菓子の指導、病院や福祉施設での講師、国際的な食の展示会のプロデュース</li>
+          <li>ル・コルドン・ブルー パリ校「La Boulangerie Traditionnelle」修了</li>
+          <li>腸活パン作りの指導 4,600名以上</li>
+          <li>富澤商店 公式サイトにレシピ38本（「桑野 りさ先生」として掲載）</li>
+          <li>世田谷パン祭り 2019 シンボルパンに選定／小田急百貨店 シーズンスイーツ出店</li>
+          <li>パン職人 志賀勝栄氏と「志賀Labo」を立ち上げ、約5年間講習会を主催</li>
+          <li>スペルト小麦＆低糖質ベーカリー養成講座 主宰｜富山・鹿児島・広島で4名がパン屋・カフェを開業。70歳・初心者から4か月で開業した例も</li>
+          <li>炭火焼き和牛 TONBY'z 65（8周年）の店主が講座でパンを学び、いまもお店でパンを出し続けています。LISAが投稿したお店の写真は、Googleマップで8万回見られました</li>
+          <li>著書『りさパン〜しあわせの見つけ方〜』Kindle ベストセラー 19部門 1位</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2><span class="en">PRICE</span>受講料</h2>
+    <div class="card price">
+      <span class="ribbon">12月31日までのお申し込み</span>
+      <div style="font-family:var(--serif);margin-bottom:6px;margin-top:8px">しあわせのパン習慣 通信講座（全12回）</div>
+      <div class="amount">88,000<small>円（税込）</small></div>
+      <div class="up">2027年1月のお申し込みから 108,000円（税込）になります</div>
+      <ul class="incl">
+        <li>レシピ＋動画 12回（毎月15日）</li>
+        <li>スペルト小麦パンミックス粉（4か月ごと・全3回 ご自宅へ）</li>
+        <li>LINEオープンチャットでの質問サポート</li>
+        <li>月1回のオンライン相談会</li>
+      </ul>
+      <p class="note">お支払いは、一括または分割をお選びいただけます。<br>分割の回数と金額は、お申し込みページでご確認ください。</p>
+    </div>
+    <a class="cta" id="apply" href="https://mosh.jp/products/01911c1e-4a8a-4ad3-9235-6567f6434e38" target="_blank" rel="noopener">お申し込みはこちら</a>
+    <p class="cta-sub">ご質問だけでも、お気軽にどうぞ。</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">SCHEDULE</span>はじまりの流れ</h2>
+    <div class="steps">
+      <div class="step"><b>お申し込み</b><span>お申し込みは随時受け付けています。</span></div>
+      <div class="step"><b>粉のお届け・コミュニティへご招待</b><span>スペルト小麦パンミックス粉を発送し、受講生専用のLINEへご招待します。</span></div>
+      <div class="step"><b>毎月15日 レシピ＆動画をお届け</b><span>届いた粉と一緒に、「しあわせのパン習慣」をゆっくり始めましょう。</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="en">Q&amp;A</span>よくあるご質問</h2>
+
+    <div class="faqgroup">講座について</div>
+    <details><summary>パン作りの経験がなくても大丈夫ですか？</summary><div class="a">はい、まったく問題ありません。初心者の方を対象に、基礎からていねいに解説しています。動画では作業の様子を細かく撮影していますので、初めての方も安心して取り組めます。</div></details>
+    <details><summary>特別な道具や設備は必要ですか？</summary><div class="a">講座開始前に、基本の道具リストをお送りします。ボウル、カード、スケール、めん棒、ハケ、ナイフ、オーブン、オーブンペーパー、ハサミなど、ご家庭にあるもので始められます。</div></details>
+    <details><summary>家族のアレルギーが心配です。</summary><div class="a">スペルト小麦は古代小麦の一種で、消化吸収がよいといわれていますが、小麦アレルギーの方はご注意ください。お申し込みの際にアレルギーのことをお知らせいただければ、個別にご相談に応じます。</div></details>
+    <details><summary>忙しくて、毎月取り組めるか不安です。</summary><div class="a">月に1回のペースなので、無理なく続けられるように作っています。動画は18か月間、いつでもご覧いただけます。</div></details>
+
+    <div class="faqgroup">受講のしくみについて</div>
+    <details><summary>粉はいつ届きますか？</summary><div class="a">スペルト小麦パンミックス粉は、4か月ごとに全3回お送りします。初回は講座開始時にお届けします。</div></details>
+    <details><summary>毎月のオンライン相談会には、必ず参加しなければなりませんか？</summary><div class="a">いいえ、参加は自由です。都合のよい月だけご参加いただけます。</div></details>
+    <details><summary>途中で解約することはできますか？</summary><div class="a">この講座は、基礎から応用まで順番に学んでいただく作りになっています。原則として、ご入金後の返金はしておりません。あらかじめご了承ください。</div></details>
+
+    <div class="faqgroup">受講が始まってから</div>
+    <details><summary>質問はいつでもできますか？</summary><div class="a">受講期間中は、LINEオープンチャットでいつでもご質問を受け付けています。基本的に24時間以内にお返事します。※講座のレシピ・内容についてのご質問に限ります。</div></details>
+    <details><summary>パンミックス粉を追加で買えますか？</summary><div class="a">受講期間中は受講生特典として、スペルトパンミックスを10%OFFでご購入いただけます。</div></details>
+    <details><summary>レシピはアレンジしても大丈夫ですか？</summary><div class="a">もちろんです。基本のレシピに慣れたら、ぜひアレンジを楽しんでください。※アレンジレシピについてのご質問にはお答えできませんので、ご了承ください。</div></details>
+    <details><summary>講座が終わったあともサポートはありますか？</summary><div class="a">1年間の講座のあとも、卒業生のコミュニティにご参加いただけます。フォローアップ講座も別にご案内しています。</div></details>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="en">MESSAGE</span>LISAからのメッセージ</h2>
+    <p class="message">美しさは、キッチンから始まる。<br>毎日口にするものが、身体をつくります。<br><br>
+パンは、焼き上がる香りも、<br>誰かのために捏ねる時間も、<br>「自分を満たす」やさしい魔法だと思います。<br><br>
+    忙しい毎日でも、ほんの少しのゆとりがあれば、<br>そのパンは、きっと誰かの笑顔をつくるはず。<br><br>
+    あなたも「しあわせのパン習慣」を、<br>はじめてみませんか？</p>
+    <p class="sign" style="text-align:center">LISA</p>
+    <a class="cta" href="https://mosh.jp/products/01911c1e-4a8a-4ad3-9235-6567f6434e38" target="_blank" rel="noopener" data-apply>お申し込みはこちら</a>
+  </div>
+</section>
+
+<script>
+(function(){
+  try{
+    var els=document.querySelectorAll('section .wrap > *');
+    if(!('IntersectionObserver' in window))return;
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){el.classList.add('fade');io.observe(el)});
+  }catch(e){}
+})();
+</script>
+
+
+<a class="sticky-cta" href="https://mosh.jp/products/01911c1e-4a8a-4ad3-9235-6567f6434e38" target="_blank" rel="noopener" data-apply>お申し込みはこちら<span>88,000円（税込）・分割OK</span></a>
+
+<script>
+(function(){
+  var b=document.querySelector('.sticky-cta'), h=document.querySelector('.hero'), price=document.getElementById('price');
+  if(!b||!h)return;
+  function upd(){var y=window.scrollY, hb=h.offsetHeight, pr=price?price.getBoundingClientRect():null;
+    var nearPrice=pr&&pr.top<window.innerHeight&&pr.bottom>0;
+    b.classList.toggle('show', y>hb*0.8 && !nearPrice);}
+  window.addEventListener('scroll',upd,{passive:true});upd();
+})();
+</script>
+<script>
+(function(){
+  var hero = document.querySelector('.hero');
+  if(!hero) return;
+  for(var i=0; i<6; i++){
+    var p = document.createElement('div');
+    p.className = 'hero-particle';
+    p.style.top = (15 + Math.random() * 70) + '%';
+    p.style.left = (10 + Math.random() * 80) + '%';
+    p.style.animationDelay = (Math.random() * 3) + 's';
+    p.style.animationDuration = (3 + Math.random() * 3) + 's';
+    hero.appendChild(p);
+  }
+})();
+</script>
+
+<footer>
+  <div class="wrap">Bread Salon Lisa ｜ スペルト小麦で始める しあわせのパン習慣<br>© LISA Kuwano</div>
+</footer>
